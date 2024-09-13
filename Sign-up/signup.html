@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,7 +17,7 @@
             height: 100vh;
         }
 
-        .signin-container {
+        .signup-container {
             background-color: #1A1A1A;
             padding: 40px;
             border-radius: 8px;
@@ -25,15 +25,16 @@
             width: 400px;
         }
 
-        .signin-container h2 {
+        .signup-container h2 {
             color: #FFFFFF;
             text-align: center;
             margin-bottom: 30px;
             font-size: 28px;
         }
 
-        .signin-container input[type="email"],
-        .signin-container input[type="password"] {
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="password"] {
             width: 100%;
             padding: 15px;
             margin: 10px 0 20px 0;
@@ -44,7 +45,7 @@
             border-radius: 4px;
         }
 
-        .signin-container input[type="submit"] {
+        .signup-container input[type="submit"] {
             background-color: #00C3FF;
             color: white;
             padding: 15px 20px;
@@ -55,11 +56,11 @@
             font-size: 16px;
         }
 
-        .signin-container input[type="submit"]:hover {
+        .signup-container input[type="submit"]:hover {
             background-color: #00A7E6;
         }
 
-        .signin-container a {
+        .signup-container a {
             color: #00C3FF;
             text-decoration: none;
             display: block;
@@ -69,14 +70,14 @@
     </style>
 </head>
 <body>
-    <div class="signin-container">
-        <h2>Sign In to Your Account</h2>
-        <form action="signin.php" method="post">
-            <input type="email" name="gmail" placeholder="Email Address" required>
-            <input type="password" name="pass" placeholder="Password" required>
-            <input type="submit" value="Sign In">
+    <div class="signup-container">
+        <h2>Create Your Account</h2>
+        <form action="signup.php" method="post">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Sign Up">
         </form>
-        <a href="/Sign-up/signup.html">Don't have an account? Sign up here</a>
     </div>
 </body>
 </html>
