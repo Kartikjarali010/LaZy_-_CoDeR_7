@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: /adminem/admin/admin.php");
                 exit();
             } else {
-                header("Location: /options/index.html");
+                header("Location: /dashboard/index.html");
                 exit();
             }
         } else {
